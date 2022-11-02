@@ -1,8 +1,10 @@
+import Header from '../components/Header'
+
 export default function Home() {
     return (
 
 <>
-<h1> Header Goes Header</h1>
+<Header title={'Add New Album'}/>
 <p> Album List goes here </p>
 
 </>
