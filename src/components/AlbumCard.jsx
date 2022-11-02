@@ -1,11 +1,15 @@
-export default function AlbumCard() {
+import{Link} from 'react-router-dom'
+
+export default function AlbumCard({thisAlbum}) {
     return (
+        <Link to={`/albums/${thisAlbum.albumId}`}>
         <div className="album-card">
-            <h3 className="album-list"> {thisAlbum.title}</h3>
+            <h3 className="album-title"> {thisAlbum.title}</h3>
             <p> {thisAlbum.artist},{thisAlbum.year}</p>
 
             
         </div>
+        </Link>
     )
 
 }
