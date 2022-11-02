@@ -6,10 +6,10 @@ export default function Home() {
     return (
 
 <>
+
 <Header title={'Best Selling Albums'}/>
 <Link to ="/albums/new"> Add Album</Link>
-<p> Album List  </p>
-
+<AlbumList/>
 </>
 )
 }
